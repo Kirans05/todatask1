@@ -1,0 +1,22 @@
+
+.tr:nth-child(even):hover{
+    background-color: aqua;
+}
+
+.tr{
+    background-color: antiquewhite;
+    text-align: center;
+}
+table{
+    width: 500px;
+}
+.strike{
+    text-decoration: line-through;
+}
+/* .tdcheckbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:3rem;
+} */
