@@ -3,6 +3,11 @@
     background-color: aqua;
 }
 
+.tr:nth-child(odd):hover{
+    background-color: blue;
+    color: white;
+}
+
 .tr{
     background-color: antiquewhite;
     text-align: center;
@@ -10,9 +15,7 @@
 table{
     width: 500px;
 }
-.strike{
-    text-decoration: line-through;
-}
+
 /* .tdcheckbox{
     display: flex;
     flex-direction: row;

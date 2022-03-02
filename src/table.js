@@ -30,10 +30,10 @@ function Table({change,finaldata,deletehandle}) {
                 return (
                     <tr key={index} className='tr'>
                         <td className='tdcheckbox'>
-                            <input type="checkbox" onChange={(e)=>change(e,item)} onClick={(e)=>valueschang(e)} className="checkbox"/>
+                            <input type="checkbox" onChange={(e)=>change(e,item)} onClick={(e)=>valueschang(e)} className="checkbox" checked={item.done}/>
                         </td>
                         <td>
-                        <small className={cname?"strike":"nonstrike"}>{item.task}</small>
+                        <small style={{textDecoration:(item.done?"line-through":"")}}>{item.task}</small>
                         </td>
                         <td>
                             <button onClick={()=>deletehandle(item)} className={"btn btn-primary"}>X</button>
